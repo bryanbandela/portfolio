@@ -1,0 +1,153 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1.2rem 0;
+  margin: 1rem auto 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.title p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  width: 35%;
+  letter-spacing: 1px;
+}
+
+.title p span {
+  font-family: 'Fira Code', sans-serif;
+  font-size: 1rem;
+  color: #f7fd04;
+}
+
+.title .line {
+  width: 65%;
+  height: 1px;
+  background-color: #8892b0;
+  margin-left: 5px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.summary {
+  width: 90%;
+}
+
+.summary p,
+.summary ul li span {
+  color: #888787;
+  font-family: 'Poppins' sans-serif;
+  font-size: 1rem;
+}
+
+.summary ul li span {
+  color: #f7fd04;
+}
+
+.summary ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem auto;
+}
+
+.summary ul li {
+  margin: 0.2rem;
+}
+
+.div_skills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.div_skills div {
+  color: #fff;
+}
+
+@media (min-width: 820px) {
+  .about {
+    width: 80%;
+    padding: 1rem 1.2rem 0;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin: 3rem 0;
+  }
+
+  .title p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+    width: 35%;
+  }
+  .title .line {
+    width: 65%;
+    margin-left: 2px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .summary {
+    width: 50%;
+    padding: 1rem 2rem;
+  }
+
+  .image {
+    width: 50%;
+    position: relative;
+  }
+
+  .fa {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fa:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 1020px) {
+  .title p {
+    width: 30%;
+  }
+  .title .line {
+    width: 70%;
+  }
+}

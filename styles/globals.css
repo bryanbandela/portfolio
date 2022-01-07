@@ -1,16 +1,124 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@400;600;700&display=swap');
+:root {
+  --grey: #8892b0;
+  --lightgrey: #ccd6f6;
+  --vdblue: #002030;
+  --darkblue: #0a1930;
+  --lightblue: #0e4f70;
+  --yellow: #64ffda;
+  --white: #ffff;
+  --yellow: #f7fd04;
+  --black: #000000;
+  --darkgrey: #525252;
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+/* scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* width  */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--darkgrey);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'Poppins', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: 'Fira Code', sans-serif;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+ul a span {
+  color: var(--yellow);
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+  font-family: 'Fira Code', sans-serif;
+  font-weight: bold;
+  color: var(--yellow);
+  cursor: pointer;
+  border: 1px solid var(--yellow);
+  border-radius: 3px;
+  padding: 0.5em;
+  width: 6rem;
+  transition: 0.3s ease-in;
+}
+
+button a {
+  color: var(--yellow);
+}
+
+@media (min-width: 820px) {
+  ul li a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  ul a span {
+    margin-bottom: 0;
+  }
+
+  ul a p:hover {
+    color: var(--yellow);
+    transition: color 0.1s ease-in;
+  }
+
+  button:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+  }
+
+  button:hover a {
+    color: var(--black);
+  }
+
+  button:hover span {
+    color: var(--black);
+  }
 }

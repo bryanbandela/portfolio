@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@400;600;700&display=swap');
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  padding: 25% 1.2rem 0;
+}
+
+.contents p {
+  font-family: 'Fira Code', sans-serif;
+  font-size: 1rem;
+  color: #f7fd04;
+}
+
+.contents .summary {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #888787;
+  line-height: 1.6;
+}
+
+.summary span {
+  color: #f7fd04;
+}
+
+.contents h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #888787;
+  margin-bottom: 0.8rem;
+}
+
+.contents .name {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.contents button {
+  width: 150px;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 10% 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.contents a {
+  text-decoration: none;
+  color: #f7fd04;
+}
+
+.gearbox {
+  display: none;
+}
+
+.gear {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  animation: rotate-right 120s linear infinite;
+}
+
+.gear path {
+  fill: #2b2b2b;
+}
+
+@keyframes rotate-right {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.socials {
+  display: none;
+}
+
+.email {
+  display: none;
+}
+
+@media (min-width: 820px) {
+  .welcome {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  .contents {
+    width: 70%;
+    min-width: 550px;
+    padding: 8rem 8rem 0;
+  }
+
+  .contents .name {
+    font-size: 2.5rem;
+  }
+
+  .gearbox {
+    display: block;
+    width: 30%;
+    max-width: 200px;
+    position: relative;
+  }
+
+  .socials {
+    position: fixed;
+    right: 0.75rem;
+    bottom: 0;
+    display: flex;
+    height: 70%;
+    width: 3rem;
+  }
+
+  .socials i {
+    color: #888787;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .socials .github {
+    position: absolute;
+    bottom: 85%;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+  .socials .github:hover {
+    bottom: 87%;
+    color: #f7fd04;
+  }
+
+  .socials .linkedin {
+    position: absolute;
+    bottom: 70%;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+
+  .socials .linkedin:hover {
+    bottom: 72%;
+    color: #f7fd04;
+  }
+
+  .socials .mail {
+    position: absolute;
+    bottom: 55%;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+
+  .socials .mail:hover {
+    bottom: 57%;
+    color: #f7fd04;
+  }
+}
+
+@media (min-width: 1020px) {
+  .gear {
+    top: 25%;
+    right: 25%;
+  }
+
+  .email p {
+    font-size: 1rem;
+  }
+}
