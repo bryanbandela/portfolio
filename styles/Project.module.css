@@ -11,24 +11,20 @@
   overflow: hidden;
 }
 
-.description {
-  display: flex;
-  justify-content: space-between;
-}
-
-.description p {
+.project p {
   color: #888787;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin-bottom: 16px;
   margin-right: 8px;
   letter-spacing: 1px;
-  width: 60%;
 }
 
-.description image {
-  width: 40%;
-  max-width: 200px;
+.project image {
+  position: absolute;
+  z-index: -10;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .fader {

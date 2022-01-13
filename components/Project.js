@@ -18,10 +18,8 @@ function Project({
     <div className={styles.project} id="project">
       <span>{type}</span>
       <h4>{name}</h4>
-      <div className={styles.description}>
-        <p>{description}</p>
-        <Image src={src} alt={alt} width={300} height={200} />
-      </div>
+      <p>{description}</p>
+      <Image src={src} alt={alt} width={200} height={200} />
 
       <div className={styles.technologies}>
         <span>{tech1}</span>
@@ -29,12 +27,12 @@ function Project({
         <span>{tech3}</span>
       </div>
       <div className={styles.links}>
-        <a href={github}>
+        <a href={github} target="_blank" rel="noreferrer">
           <i className={styles.github}>
             <FaGithub size="20" />
           </i>
         </a>
-        <a href={link}>
+        <a href={link} target="_blank" rel="noreferrer">
           <i className={styles.linkedin}>
             <FaExternalLinkAlt size="20" />
           </i>

@@ -5,12 +5,20 @@ function Welcome() {
   return (
     <section className={styles.welcome}>
       <div className={styles.socials}>
-        <a href="https://github.com/bryanbandela">
+        <a
+          href="https://github.com/bryanbandela"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className={styles.github}>
             <FaGithub size="25" />
           </i>
         </a>
-        <a href="https://www.linkedin.com/in/bryan-bandela-180255169/">
+        <a
+          href="https://www.linkedin.com/in/bryan-bandela-180255169/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className={styles.linkedin}>
             <FaLinkedin size="25" />
           </i>

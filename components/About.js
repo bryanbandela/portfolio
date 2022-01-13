@@ -25,8 +25,8 @@ function About() {
             Hello! My name is Bryan. I'm a front-end developer based in South
             Africa and I enjoy creating visual things on the web. My interest in
             web development started back when I decided to dive deeper into
-            programming after having a taste in CNC programming in my Mechanical
-            Engineering field!
+            programming after having a taste in Computer Numerical Control (CNC)
+            programming in my Mechanical Engineering field!
             <br />
             <br /> Fast-forward to today, and I’ve developed a taste for
             frontend development and I have the privilege to build fullstack web
@@ -56,6 +56,12 @@ function About() {
             </li>
             <li>
               <span>MongoDB</span>
+            </li>
+            <li>
+              <span>Heroku</span>
+            </li>
+            <li>
+              <span>Github</span>
             </li>
           </ul>
         </div>
