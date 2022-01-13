@@ -6,7 +6,7 @@ function Projects() {
     <section className={styles.projects} id="Projects">
       <div className={styles.title}>
         <p>
-          <span>01.</span> Some Projects I've Built
+          <span>01.</span> Some Projects I&apos;ve Built
         </p>
         <span className={styles.line}></span>
       </div>

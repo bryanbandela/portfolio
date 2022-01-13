@@ -21,7 +21,7 @@ function Navbar() {
     <nav className={styles.nav}>
       {/* Brand */}
       <div className={styles.brand}>
-        <a href="/">
+        <a href="#Welcome">
           <h2>B</h2>
         </a>
       </div>

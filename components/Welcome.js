@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Welcome() {
   return (
-    <section className={styles.welcome}>
+    <section className={styles.welcome} id="Welcome">
       <div className={styles.socials}>
         <a
           href="https://github.com/bryanbandela"
