@@ -1,9 +1,9 @@
 .loader__container {
-  position: fixed;
+  position: relative;
   height: 100px;
   width: 100px;
   top: 30%;
-  left: 40%;
+  left: 0%;
 }
 
 .loader__container svg path {
