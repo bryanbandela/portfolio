@@ -22,10 +22,7 @@ function Contact() {
       body: data,
     };
     try {
-      const promise = await fetch(
-        'https://bryanbandela.vercel.app/api/mail',
-        config
-      );
+      const promise = await fetch('http://localhost:3000/api/mail', config);
       const { response, info } = await promise.json();
       if (response) {
         console.log('Your response from backend', response, info);
