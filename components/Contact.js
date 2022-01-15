@@ -22,7 +22,10 @@ function Contact() {
       body: data,
     };
     try {
-      const promise = await fetch('/api/mail', config);
+      const promise = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/mail`,
+        config
+      );
       const { response, info } = await promise.json();
       if (response) {
         console.log('Your response from backend', response, info);
