@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/Contact.module.css';
+import axios from 'axios';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -12,23 +13,19 @@ function Contact() {
     e.preventDefault();
     setSubmit(true);
     const content = { name: name, mail: mail, message: message };
-    const data = JSON.stringify(content);
-    console.log('This is frontent', content, data);
-    const config = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: data,
-    };
+    // const data = JSON.stringify(content);
+    console.log('This is frontent', content);
+    // const config = {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: data,
+    // };
     try {
-      const promise = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/mail`,
-        config
-      );
-      const { response, info } = await promise.json();
-      if (response) {
-        console.log('Your response from backend', response, info);
+      const promise = await axios.post(`/api/mail`, content);
+
+      if (promise) {
+        console.log('Your response from backend', promise);
         setSubmit(false);
         setName('');
         setMail('');

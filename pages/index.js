@@ -23,3 +23,13 @@ export default function Home() {
     </>
   );
 }
+
+export async function getServerSideProps() {
+  console.log('Here is the process', process.env.NEXT_PUBLIC_API_URL);
+
+  return {
+    props: {
+      hello: 'world',
+    },
+  };
+}
