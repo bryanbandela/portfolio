@@ -8,5 +8,5 @@ return (
 )
 
 2. Environment variables
-   Read:
-   https://frontend-digest.com/environment-variables-in-next-js-9a272f0bf655
+   With vercel you must first add the env variables
+   then add the commitment on Git for the variable to take effect

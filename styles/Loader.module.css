@@ -2,8 +2,8 @@
   position: relative;
   height: 100px;
   width: 100px;
-  top: 50%;
-  left: 40%;
+  top: 10vh;
+  left: calc(50% - 100px);
 }
 
 .loader__container svg path {
