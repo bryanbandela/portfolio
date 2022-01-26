@@ -23,17 +23,15 @@ function About() {
         <div className={styles.summary}>
           <p>
             Hello! My name is Bryan. I&apos;m a front-end developer based in
-            South Africa and I enjoy creating visual things on the web. My
-            interest in web development started back when I decided to dive
-            deeper into programming after having a taste in Computer Numerical
-            Control (CNC) programming in my Mechanical Engineering field!
+            South Africa and I enjoy creating visual things on the web. I use
+            Javascript and all its major frameworks such as React/Next.js and
+            Node.js.
             <br />
-            <br /> Fast-forward to today, and I’ve developed a taste for
-            frontend development and I have the privilege to build fullstack web
-            applications, to build frontend projects and many more. <br />
+            <br /> With a background in Mechanical Engineering, I know the
+            importance of planning, designing and testing solutions <br />
             <br />
-            Here are the few technologies I’ve been working with since the start
-            of my journey:
+            Here are the few other technologies I’ve been working with since the
+            start of my journey:
           </p>
           <ul>
             <li>
@@ -46,13 +44,13 @@ function About() {
               <span>JS (ES6+)</span>
             </li>
             <li>
-              <span>React</span>
-            </li>
-            <li>
               <span>Node.js</span>
             </li>
             <li>
-              <span>Next.js</span>
+              <span>React</span>
+            </li>
+            <li>
+              <span>MySQL</span>
             </li>
             <li>
               <span>MongoDB</span>

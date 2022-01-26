@@ -35,10 +35,9 @@ function Welcome() {
         <h2 className={styles.name}>Bryan Bandela.</h2>
         <h2>Front-end Developer.</h2>
         <p className={styles.summary}>
-          I am a web developer with a great passion for front-end development. I
-          use the MERN stack (or Next.js) for scalable frontend projects and
-          Node.js for back-end development. I am currently
-          <span> available for hire</span> for contrat or freelance .
+          I am a web developer with a focus on front-end development. If you
+          would like to work with me I am currently
+          <span> available for hire</span> for contract or freelance.
         </p>
         <button>
           <a href="#Contact">Contact me</a>

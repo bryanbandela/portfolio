@@ -13,11 +13,11 @@ function Projects() {
       <div className={styles.myprojects}>
         <Project
           type="Expense tracker"
-          name="troooc"
+          name="troooc.com"
           description="A simple and yet a useful personal expense tracker app featuring
         friendly user experience. With only four menus: Home menu to manage your expenses, Tips menu to write and read tips from the community, Budget menu to list your unique budget and finally your profile."
           github="https://github.com/bryanbandela/troooc.com"
-          link="https://troooc.herokuapp.com/"
+          link="http://troooc.com/"
           tech1="React"
           tech2="NodeJS"
           tech3="MongoDB"
